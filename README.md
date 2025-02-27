@@ -4,7 +4,7 @@ Plays a .usm in the titlescreen for Sonic Frontiers
 
 ## Credits
 
-- [angryzor](www.github.com/angryzor) - rangers-sdk-example, rangers-sdk and knowledge!
+- [angryzor](https://www.github.com/angryzor) - rangers-sdk-example, rangers-sdk and knowledge!
 
 ## Usage in a mod
 
