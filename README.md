@@ -8,4 +8,4 @@ Plays a .usm in the titlescreen for Sonic Frontiers
 
 ## Usage in a mod
 
-Add the .dll to the root of your mod, reference it in the mod.ini. The .dll referenced to "titlescreen.usm" located in the movie folder of the game, meaning you can just create a folder in your mod and put your custom titlescreen there.
+Add the .dll to the root of your mod, reference it in the mod.ini. The .dll references to "titlescreen.usm" located in the movie folder of the game, meaning you can just create a folder in your mod and put your custom titlescreen there.
