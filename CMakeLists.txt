@@ -54,6 +54,8 @@ foreach(LIB rangers-sdk detours)
     target_link_libraries(mod PRIVATE ${LIB})
 endforeach()
 
+add_subdirectory(src)
+
 set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT mod)
 
 cmake_path(APPEND GAME_FOLDER_NORMALIZED "Mods" OUTPUT_VARIABLE MODS_FOLDER)

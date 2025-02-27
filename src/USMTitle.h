@@ -9,7 +9,6 @@ public:
 	virtual bool ProcessMessage(hh::fnd::Message& message) override;
 	virtual void AddCallback(hh::game::GameManager* gameManager) override;
 	virtual void RemoveCallback(hh::game::GameManager* gameManager) override;
-	virtual void Update(fnd::UpdatingPhase phase, const fnd::SUpdateInfo& updateInfo) override;
 
 	hh::fnd::Handle<hh::fmv::MovieHandleObj> movieHandle;
 

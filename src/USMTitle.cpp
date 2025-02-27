@@ -59,8 +59,3 @@ void ObjUSMTitle::RemoveCallback(hh::game::GameManager* gameManager)
 	movieHandle->Free();
 	handleMgr->RemoveObject(*movieHandle);
 }
-
-void ObjUSMTitle::Update(fnd::UpdatingPhase phase, const fnd::SUpdateInfo& updateInfo)
-{
-
-}
