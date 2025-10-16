@@ -1,5 +1,6 @@
 #include "USMTitle.h"
 #include "TitleMovie.h"
+#include <iostream>
 
 using namespace hh::fmv;
 using namespace hh::fnd;
@@ -39,9 +40,10 @@ void ObjUSMTitle::AddCallback(GameManager* gameManager) {
 				}
 
 			if (userElem) {
-				auto& x = userElem->mainSaveHeaderData[0];
+				auto& x = userElem->mainSaveHeaderData[3];
 
-				if (x.signature == 1396790853) titleMovie->islandMovies[(char)x.sequence];
+				if (x.signature == 1396790853) 
+					tmpMovieName = titleMovie->islandMovies[(char)x.icon];
 			}
 		}
 	}
