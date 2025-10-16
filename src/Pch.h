@@ -11,5 +11,7 @@
 #include <d3d11.h>
 
 #include <cstdint>
+#include <rangers-sdk.h>
 
 #include <utilities/Helpers.h>
+#include <utilities/GameHelpers.h>
