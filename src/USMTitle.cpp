@@ -40,10 +40,13 @@ void ObjUSMTitle::AddCallback(GameManager* gameManager) {
 				}
 
 			if (userElem) {
-				auto& x = userElem->mainSaveHeaderData[3];
-
-				if (x.signature == 1396790853) 
-					tmpMovieName = titleMovie->islandMovies[(char)x.icon];
+				for (auto& x : userElem->mainSaveHeaderData) {
+					if (x.index == 0 && (x.config & 1) != 0) {
+						if (x.signature == 1396790853)
+							tmpMovieName = titleMovie->islandMovies[(char)x.icon];
+						break;
+					}
+				}
 			}
 		}
 	}
