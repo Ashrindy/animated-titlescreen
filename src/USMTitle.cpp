@@ -66,6 +66,8 @@ void ObjUSMTitle::AddCallback(GameManager* gameManager) {
 
 void ObjUSMTitle::RemoveCallback(GameManager* gameManager)
 {
+	if (!*movieHandle) return;
+
 	auto* movie = gameManager->GetService<MovieManager>();
 	if (movie)
 		movie->movies.remove(movie->movies.find(movieHandle));

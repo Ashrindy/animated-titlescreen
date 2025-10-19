@@ -21,9 +21,10 @@ HOOK(uint64_t, __fastcall, GameModeBootInit, 0x1401AADF0, app::game::GameMode* s
 	return res;
 }
 
-HOOK(void, __fastcall, UITitleAddCallback, 0x140AD08E0, hh::game::GameObject* self, hh::game::GameManager* mgr) {
-	originalUITitleAddCallback(self, mgr);
+HOOK(void, __fastcall, UITitleAddCallback, 0x140AD1460, hh::game::GameObject* self) {
+	originalUITitleAddCallback(self);
 
+	hh::game::GameManager* mgr = hh::game::GameManager::GetInstance();
 	auto* obj = GameObject::Create<ObjUSMTitle>(mgr->GetAllocator());
 	WorldPosition pos{};
 	mgr->AddGameObject(obj, "USMTitle", false, &pos, nullptr);
