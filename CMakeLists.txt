@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.28)
-project(animated-titlescreen VERSION 2.0.1
+project(animated-titlescreen VERSION 2.0.2
                  DESCRIPTION "animated-titlescreen"
                  LANGUAGES CXX)
 

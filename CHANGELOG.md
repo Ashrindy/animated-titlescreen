@@ -1,3 +1,7 @@
+# V2.0.2
+
+-   More stability
+
 # V2.0.1
 
 -   Fixed a bug related to not having all save slots filled
